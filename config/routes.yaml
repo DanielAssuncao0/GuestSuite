@@ -1,0 +1,7 @@
+index:
+    path: /
+    controller: App\Controller\Controller::index
+
+sum:
+    path: /sum
+    controller: App\Controller\Controller::sum
