@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Symfony\Component\Validator\Constraints as Assert;
+
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -23,6 +25,8 @@ class Sum
      * @var float
      * 
      * @ORM\Column(name="first", type="float")
+     * @Assert\NotBlank
+     * @Assert\Type("\Number")
      */
     private int $first;
 
@@ -30,6 +34,8 @@ class Sum
      * @var float
      * 
      * @ORM\Column(name="second", type="float")
+     * @Assert\NotBlank
+     * @Assert\Type("\Number")
      */
     private int $second;
 

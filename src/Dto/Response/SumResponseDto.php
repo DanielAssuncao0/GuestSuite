@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 namespace App\Dto\Response;
 
 use JMS\Serializer\Annotation as Serialization;
 
-class SumDtoResponse
+class SumResponseDto
 {
     /**
      * @Serialization\Type("float")
@@ -15,4 +15,9 @@ class SumDtoResponse
      * @Serialization\Type("float")
      */
     public float $second;
+
+    /**
+     * @Serialization\Type("float")
+     */
+    public float $sum;
 }

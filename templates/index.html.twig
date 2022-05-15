@@ -1,12 +1,9 @@
-<form action="sum" method="POST">
-    <div>
-        <label>First number</label><br>
-        <input type="number" name="one" min='1'>
-    </div>
-    <div>
-        <label>Second number</label><br>
-        <input type="number" name="two" min='1'>
-    </div>
-    <br>
-    <button type="submit">Submit</button>
-</form>
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h2>Sum two numbers</h2>
+
+    {{ form(sum_form) }}
+
+{% endblock %}
