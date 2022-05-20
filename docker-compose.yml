@@ -14,6 +14,9 @@ services:
       - '4306'
     volumes:
       - ./mysql:/var/lib/mysql
+  mailer:
+    image: schickling/mailcatcher
+    ports: [1025, 1080]
   rabbitmq:
     container_name: rabbitmq
     image: rabbitmq:3.7-management
